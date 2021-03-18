@@ -19,7 +19,9 @@ li{
     list-style: none;
 }
 body{
-   
+   @extend %ubuntu-light;
+   font-size: 17px;
+   line-height: 26px;
     font-display:swap ;
     overflow-x: hidden;
     position: relative;
@@ -39,12 +41,28 @@ h5{
     font-size: inherit;
 }
 .page-section{
-   min-height: 100vh;
+
     background-image: url(../images/page-bg.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     position: relative;
+   
+    &::before{
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+        opacity: .15;
+    }
+}
+.page-section__wrapper{
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
     padding: 74px 0 50px;
 }
 .title{
@@ -53,6 +71,7 @@ font-size: 44px;
 line-height: 53px;
 margin-bottom: 55px;
 padding-left: 25px;
+padding-top: 200px;
 }
 .scroll__btn{
 padding: 13px 0 30px;
