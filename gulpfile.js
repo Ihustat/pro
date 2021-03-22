@@ -44,6 +44,8 @@ function scripts() {
        
         'node_modules/wow.js/dist/wow.js',
         'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/fullpage.js/dist/fullpage.js',
+        'node_modules/fullpage.js/vendors/scrolloverflow.js',
         'app/js/main.js',
 
     ])
@@ -59,6 +61,7 @@ function styles() {
         'app/scss/style.scss',
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/fullpage.js/dist/fullpage.css',
         'node_modules/animate.css/animate.css',
        
     ])
